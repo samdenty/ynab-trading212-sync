@@ -1,0 +1,22 @@
+{
+	"name": "ynab-trading212-sync",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"start": "tsx src/index.ts"
+	},
+	"dependencies": {
+		"@cloudflare/workers-types": "^4.20240614.0",
+		"@types/node": "^20.14.2",
+		"csv-parse": "^5.5.6",
+		"dayjs": "^1.11.10",
+		"dotenv": "^16.4.5",
+		"toml": "^3.0.0",
+		"trading212-api": "^1.1.0",
+		"tsx": "^4.19.2",
+		"wrangler": "^3.0.0",
+		"ynab": "^2.2.0",
+		"zod": "^3.23.8"
+	}
+}

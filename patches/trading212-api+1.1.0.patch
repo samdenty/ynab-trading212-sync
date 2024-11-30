@@ -1,0 +1,25 @@
+diff --git a/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.d.ts b/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.d.ts
+index 43d96fc..a829317 100644
+--- a/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.d.ts
++++ b/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.d.ts
+@@ -27,6 +27,6 @@ export declare class MetadataAPI {
+         minTradeQuantity: number;
+         ticker: string;
+         workingScheduleId: number;
+-        shortname?: string | undefined;
++        shortName?: string | undefined;
+     }[]>;
+ }
+diff --git a/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.js b/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.js
+index bcb7629..604d845 100644
+--- a/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.js
++++ b/node_modules/trading212-api/dist/src/api/metadata/MetadataAPI.js
+@@ -15,7 +15,7 @@ const MetadataInstrumentSchema = z.object({
+     maxOpenQuantity: z.number(),
+     minTradeQuantity: z.number(),
+     name: z.string(),
+-    shortname: z.union([z.string(), z.undefined()]),
++    shortName: z.union([z.string(), z.undefined()]),
+     ticker: z.string(),
+     type: INSTRUMENT_TYPE,
+     workingScheduleId: z.number(),
