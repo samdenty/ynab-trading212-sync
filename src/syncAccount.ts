@@ -110,7 +110,7 @@ export async function syncAccount({ TRADING212_TOKEN, YNAB_TOKEN, ACCOUNT: accou
 			const { status, downloadLink } = exportsHistory.find((e) => e.reportId === reportId) || {};
 
 			if (status !== 'Finished' || !downloadLink) {
-				return getTrading212Transactions();
+				return getTrading212Transactions(ref);
 			}
 
 			csvText = await fetch(downloadLink).then((res) => res.text());
